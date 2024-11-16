@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://c3xybxm64ntdm"]
+
+[ext_resource type="Script" path="res://scripts/answer_button.gd" id="1_p7dum"]
+
+[node name="AnswerButton" type="Button"]
+custom_minimum_size = Vector2(240, 100)
+offset_right = 240.0
+offset_bottom = 100.0
+text = "Vire a direita, depois corra até poste, atravesse a rua e pare."
+autowrap_mode = 3
+script = ExtResource("1_p7dum")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

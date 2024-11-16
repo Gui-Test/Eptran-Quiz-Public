@@ -1,0 +1,50 @@
+[gd_scene load_steps=5 format=3 uid="uid://bse815gol4r3p"]
+
+[ext_resource type="Script" path="res://scripts/menu.gd" id="1_02lsg"]
+[ext_resource type="FontFile" uid="uid://0rf0fbwia0k6" path="res://resources/theme/tf2build.ttf" id="2_p2hqi"]
+[ext_resource type="Texture2D" uid="uid://kidja110ua40" path="res://assets/imgs/Menu.png" id="2_yxxs0"]
+[ext_resource type="StyleBox" uid="uid://c7gh213b8vlej" path="res://resources/styleboxes/button_sign.tres" id="3_wmki7"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_02lsg")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+offset_right = 1153.0
+offset_bottom = 646.0
+texture = ExtResource("2_yxxs0")
+expand_mode = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 504.0
+offset_top = 409.0
+offset_right = 652.0
+offset_bottom = 553.0
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0.858824, 0.858824, 0.858824, 1)
+theme_override_font_sizes/font_size = 36
+theme_override_styles/hover = ExtResource("3_wmki7")
+theme_override_styles/pressed = ExtResource("3_wmki7")
+theme_override_styles/normal = ExtResource("3_wmki7")
+text = "Jogar"
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 0
+offset_left = 178.0
+offset_top = 270.0
+offset_right = 1017.0
+offset_bottom = 374.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_p2hqi")
+theme_override_font_sizes/font_size = 90
+text = "QUIZ de trÂnsito"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

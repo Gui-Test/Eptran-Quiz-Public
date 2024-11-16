@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://bw7bjyok63vgl"]
+
+[ext_resource type="Theme" uid="uid://deg4g3pgykccd" path="res://resources/theme/question_input_theme.tres" id="1_iejsv"]
+[ext_resource type="Script" path="res://scripts/create_quiz/answer_input.gd" id="1_mwckx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ni6bc"]
+
+[node name="AnswerInput" type="LineEdit"]
+offset_right = 117.0
+offset_bottom = 31.0
+theme = ExtResource("1_iejsv")
+placeholder_text = "Resposta"
+script = ExtResource("1_mwckx")
+
+[node name="CheckButton" type="CheckButton" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -44.0
+offset_top = -12.5
+offset_bottom = 11.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ni6bc")
+
+[connection signal="text_changed" from="." to="." method="_on_text_changed"]
+[connection signal="pressed" from="CheckButton" to="." method="_on_check_button_pressed"]

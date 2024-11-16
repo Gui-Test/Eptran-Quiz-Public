@@ -1,0 +1,151 @@
+[gd_resource type="Resource" script_class="Quiz" load_steps=23 format=3 uid="uid://c0csyypx6ug6g"]
+
+[ext_resource type="Script" path="res://scripts/quiz/question.gd" id="1_34d5f"]
+[ext_resource type="Script" path="res://scripts/quiz/quiz.gd" id="22_oe071"]
+
+[sub_resource type="Resource" id="Resource_pqqi1"]
+script = ExtResource("1_34d5f")
+question = "ADIVINHE A PLACA "
+answers = [" Proibido o trânsito de veículos", "Trânsito de ciclistas", "Cuidado, pedestres na pista;", "Trânsito compartilhado por ciclistas e pedestres"]
+correct = 3
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_jtv3d"]
+script = ExtResource("1_34d5f")
+question = "ADIVINHE A PLACA "
+answers = ["Depressão", "Valeta a frente", "Lombada", "Pista escorregadia"]
+correct = 1
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_2nvvy"]
+script = ExtResource("1_34d5f")
+question = "ADIVINHE A PLACA "
+answers = ["Mão dupla adiante", "Proibido transitar em mão dupla", "Permitido transitar à direita, apenas", "Permitido transitar à esquerda, apenas"]
+correct = 0
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_qyr2s"]
+script = ExtResource("1_34d5f")
+question = "ADIVINHE A PLACA "
+answers = ["Vire à esquerda", "Passagem à esquerda", "Vire à direita", "Veículos à esquerda"]
+correct = 0
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_k0hvo"]
+script = ExtResource("1_34d5f")
+question = "ADIVINHE A PLACA "
+answers = ["Ciclistas à direita, veículos à esquerda", "Veículos, transite à esquerda", "Cuidado, ciclistas à direita", "Ciclista, transite à direita"]
+correct = 3
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_i0750"]
+script = ExtResource("1_34d5f")
+question = "ADIVINHE A PLACA "
+answers = ["Siga em frente ou à esquerda", "Bifurcação à frente ou à esquerda", "Siga em direção única ou vire à esquerda", "Escolha o seu melhor caminho"]
+correct = 0
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_v4yy5"]
+script = ExtResource("1_34d5f")
+question = "ADIVINHE A PLACA "
+answers = ["Altura máxima permitida", "Máxima permitida na via", "Altura máxima proibida", "Altura mínima permitida"]
+correct = 0
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_jax8s"]
+script = ExtResource("1_34d5f")
+question = "ADIVINHE A PLACA "
+answers = ["Não ultrapassar no aclive", "Morro à frente", "Cuidado ao ultrapassar no subida", "Aclive acentuado"]
+correct = 3
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_scbck"]
+script = ExtResource("1_34d5f")
+question = "ADIVINHE A PLACA "
+answers = ["Ponte estreita", "Sentido obrigatório", "Pista apertada", "Passagem de apenas um veículo"]
+correct = 0
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_637f7"]
+script = ExtResource("1_34d5f")
+question = "ADIVINHE A PLACA "
+answers = ["Ônibus quebrado na pista", "Parada obrigatória de ônibus", "Somente trânsito de ônibus", "Proibido trânsito de ônibus"]
+correct = 3
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_n2qgo"]
+script = ExtResource("1_34d5f")
+question = "ADIVINHE A PLACA "
+answers = ["Atravessando pista alagada", "Pista escorregadia", "Pista com aquaplanagem", "Pista alagada"]
+correct = 1
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_iqi6s"]
+script = ExtResource("1_34d5f")
+question = "ADIVINHE A PLACA "
+answers = ["Trânsito de bicicletas motorizada", "Permitido trânsito de bicicletas", "Proibido trânsito de bicicletas", "Proibido trânsito de bicicletas aos sábados"]
+correct = 2
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_afbl3"]
+script = ExtResource("1_34d5f")
+question = "ADIVINHE A PLACA "
+answers = ["Alfândega", "Repartição pública", "Obstáculos na pista", " Tronco na pista"]
+correct = 0
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_cekx4"]
+script = ExtResource("1_34d5f")
+question = "ADIVINHE A PLACA "
+answers = ["Dê a passagem", "Parada preferencial", "Sua preferência", "Dê a preferência"]
+correct = 3
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_8mn62"]
+script = ExtResource("1_34d5f")
+question = "ADIVINHE A PLACA "
+answers = ["Trânsito de veículos de tração animal", " Proibido trânsito de veículos de tração animal", "Cuidado! Veículos de tração animal", "Permitido trânsito de veículos de tração animal"]
+correct = 1
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_74y6d"]
+script = ExtResource("1_34d5f")
+question = "ADIVINHE A PLACA "
+answers = ["Ultrapassar sempre pela direita", "Ultrapassar sempre pela esquerda", "Proibido ultrapassar", "Cuidado ao ultrapassar"]
+correct = 2
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_gr0y3"]
+script = ExtResource("1_34d5f")
+question = "ADIVINHE A PLACA "
+answers = ["Velocidade constante permitida", "Velocidade máxima proibida", "Velocidade máxima permitida", "Velocidade única permitida"]
+correct = 2
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_wcwf0"]
+script = ExtResource("1_34d5f")
+question = "ADIVINHE A PLACA "
+answers = ["Obrigatório parar no Semáforo", "Semáforo piscante à frente", "Semáforo à frente", "Parada Obrigatório"]
+correct = 2
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_787ub"]
+script = ExtResource("1_34d5f")
+question = "ADIVINHE A PLACA "
+answers = ["Quebra-molas na via", "Saliência na via", "Saliência ou lombada", "Lombada com saliência"]
+correct = 2
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_o6pkj"]
+script = ExtResource("1_34d5f")
+question = "ADIVINHE A PLACA "
+answers = ["Ponte móvel", "Alagamento na pista", "Ponte quebrada", "Mar ou rio à frente"]
+correct = 0
+img_url = ""
+
+[resource]
+script = ExtResource("22_oe071")
+name = "Quiz 1"
+theme = "Placas"
+img_url = ""
+questions = Array[ExtResource("1_34d5f")]([SubResource("Resource_pqqi1"), SubResource("Resource_jtv3d"), SubResource("Resource_2nvvy"), SubResource("Resource_qyr2s"), SubResource("Resource_k0hvo"), SubResource("Resource_i0750"), SubResource("Resource_v4yy5"), SubResource("Resource_jax8s"), SubResource("Resource_scbck"), SubResource("Resource_637f7"), SubResource("Resource_n2qgo"), SubResource("Resource_iqi6s"), SubResource("Resource_afbl3"), SubResource("Resource_cekx4"), SubResource("Resource_8mn62"), SubResource("Resource_74y6d"), SubResource("Resource_gr0y3"), SubResource("Resource_wcwf0"), SubResource("Resource_787ub"), SubResource("Resource_o6pkj")])

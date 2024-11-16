@@ -1,0 +1,81 @@
+[gd_resource type="Resource" script_class="Quiz" load_steps=13 format=3 uid="uid://c4fvy8af2vigs"]
+
+[ext_resource type="Script" path="res://scripts/quiz/question.gd" id="1_l281o"]
+[ext_resource type="Script" path="res://scripts/quiz/quiz.gd" id="2_k6lh4"]
+
+[sub_resource type="Resource" id="Resource_3wca2"]
+script = ExtResource("1_l281o")
+question = "Qual é a função da embreagem em um veículo?"
+answers = ["Aumentar a velocidade do carro", "Desligar o motor rapidamente", "Permitir a troca de marchas sem danificar o motor", "Melhorar o consumo de combustível"]
+correct = 2
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_lespc"]
+script = ExtResource("1_l281o")
+question = "Para que serve o sistema de suspensão em um veículo?"
+answers = ["Melhorar a estabilidade e o conforto ao dirigir", "Reduzir o consumo de combustível", "Facilitar a troca de pneus", "Evitar o superaquecimento do motor"]
+correct = 0
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_42m6n"]
+script = ExtResource("1_l281o")
+question = "Qual é a função do radiador em um veículo?"
+answers = ["Resfriar a água que vem de fora do carro e entra no motor, para que ele não se aqueça demais", "Mudar a estação de rádio", "Resfria a água que circula ao redor do motor, para que ele não se aqueça demais", "Resfria o ar condicionado do carro"]
+correct = 2
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_ebum7"]
+script = ExtResource("1_l281o")
+question = "Qual componente é responsável por converter a energia do motor em movimento nas rodas?"
+answers = ["Radiador", "Alternador", "Caixa de câmbio", "Direção hidráulica"]
+correct = 2
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_ro7tc"]
+script = ExtResource("1_l281o")
+question = "Para que serve o filtro de ar no motor de um carro?"
+answers = ["Reduzir o consumo de óleo", "Limpar o ar que entra no motor", "Controlar a temperatura do motor", "Aumentar a potência do motor"]
+correct = 1
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_07l6y"]
+script = ExtResource("1_l281o")
+question = "Qual a função do alternador no sistema elétrico de um veículo?"
+answers = ["Armazenar energia para o motor", "Fornecer iluminação para o painel", "Controlar o fluxo de combustível", "Gerar energia para carregar a bateria e alimentar o sistema elétrico"]
+correct = 3
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_m6jc2"]
+script = ExtResource("1_l281o")
+question = "Para que serve o cárter no motor de um carro?"
+answers = ["Aumentar a potência do motor", "Armazenar o óleo lubrificante", "Controlar o sistema de exaustãoe alimentar o sistema elétrico", "Reduzir o consumo de combustível"]
+correct = 2
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_5x105"]
+script = ExtResource("1_l281o")
+question = "O que acontece quando um carro apresenta falhas nos freios ABS?"
+answers = ["As rodas travam ao frear bruscamente", "A direção se torna mais leve", "A aceleração do carro é reduzida", "O consumo de combustível aumenta"]
+correct = 0
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_yg4x2"]
+script = ExtResource("1_l281o")
+question = "Qual é a função do escapamento em um veículo?"
+answers = ["Aumentar a eficiência do combustível", "Reduzir o barulho e liberar os gases do motor de forma segura", "Melhorar o desempenho do motor", "Resfriar o motor"]
+correct = 1
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_atebb"]
+script = ExtResource("1_l281o")
+question = "Qual componente permite ao motorista mudar a direção do veículo com menos esforço?"
+answers = ["Suspensão", "Eixo traseiro", "Sistema de freios", "Direção hidráulica"]
+correct = 3
+img_url = ""
+
+[resource]
+script = ExtResource("2_k6lh4")
+name = "Quiz 3"
+theme = "Componentes do Carro"
+img_url = ""
+questions = Array[ExtResource("1_l281o")]([SubResource("Resource_3wca2"), SubResource("Resource_lespc"), SubResource("Resource_42m6n"), SubResource("Resource_ebum7"), SubResource("Resource_ro7tc"), SubResource("Resource_07l6y"), SubResource("Resource_m6jc2"), SubResource("Resource_5x105"), SubResource("Resource_yg4x2"), SubResource("Resource_atebb")])

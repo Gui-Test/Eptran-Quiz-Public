@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://ntlv5pjkxrcf"]
+
+[ext_resource type="Script" path="res://scripts/quiz_card.gd" id="1_qjaar"]
+[ext_resource type="Resource" uid="uid://c0csyypx6ug6g" path="res://resources/quizes/placas.tres" id="2_p8a5u"]
+
+[node name="QuizCard" type="Button"]
+offset_left = 229.0
+offset_top = 86.0
+offset_right = 276.0
+offset_bottom = 136.0
+script = ExtResource("1_qjaar")
+quiz = ExtResource("2_p8a5u")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+offset_right = 47.0
+offset_bottom = 50.0
+
+[node name="NameLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Nome"
+
+[node name="ThemeLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Tema"
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

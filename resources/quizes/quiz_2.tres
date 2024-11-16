@@ -1,0 +1,116 @@
+[gd_resource type="Resource" script_class="Quiz" load_steps=18 format=3 uid="uid://by2sxgw545ect"]
+
+[ext_resource type="Script" path="res://scripts/quiz/question.gd" id="1_y7epr"]
+[ext_resource type="Script" path="res://scripts/quiz/quiz.gd" id="2_sj22d"]
+
+[sub_resource type="Resource" id="Resource_u8feu"]
+script = ExtResource("1_y7epr")
+question = "Qual é a primeira coisa que um pedestre deve fazer antes de atravessar a rua?"
+answers = ["Olhar para os dois lados", "Esperar o sinal amarelo para pedestres", "Caminhar rapidamente sem olhar", "Ignorar os sinais de trânsito"]
+correct = 0
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_uveqi"]
+script = ExtResource("1_y7epr")
+question = "Qual é a velocidade máxima permitida em áreas escolares?"
+answers = ["30 km/h", "50 km/h", "40 km/h", "Não há limite de velocidade"]
+correct = 0
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_6sp4g"]
+script = ExtResource("1_y7epr")
+question = "Em que situação é permitido dirigir usando o celular?"
+answers = ["Quando o carro está em movimento lento", "Apenas se estiver usando o viva-voz", "Nunca é permitido", "Quando o sinal está fechado"]
+correct = 2
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_nnnrv"]
+script = ExtResource("1_y7epr")
+question = "Qual é o propósito do cinto de segurança?"
+answers = ["Apenas evitar multas", "Manter o motorista e os passageiros seguros em caso de acidente", "Deixar o motorista mais confortável", "Ajudar no funcionamento do airbag"]
+correct = 1
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_kcgc1"]
+script = ExtResource("1_y7epr")
+question = "Qual a melhor atitude a tomar ao ver um ciclista na faixa?"
+answers = ["Buzinar para que ele saia da frente", "Reduzir a velocidade e manter distância", "Passar o mais rápido possível", "Aproximar-se para intimidar o ciclista"]
+correct = 1
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_mw1n6"]
+script = ExtResource("1_y7epr")
+question = "É permitido ultrapassar em curvas ou lugares de pouca visibilidade?"
+answers = ["Sim, se você estiver com pressa", "Sim, desde que não tenha carros próximos", "Não, é extremamente perigoso", "Somente se for uma via de mão dupla"]
+correct = 2
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_sfap5"]
+script = ExtResource("1_y7epr")
+question = "Qual a atitude correta ao ver um idoso atravessando a rua lentamente?"
+answers = ["Buzinar para apressá-lo", "Esperar pacientemente até ele atravessar", "Passar ao lado, sem parar", "Atravessar por trás dele"]
+correct = 1
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_7sf1t"]
+script = ExtResource("1_y7epr")
+question = "Quem tem a preferência em um cruzamento sem sinalização?"
+answers = ["O veículo maior", "O veículo que vier pela direita", "O veículo mais rápido", "Não há regras de preferência"]
+correct = 1
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_ctofb"]
+script = ExtResource("1_y7epr")
+question = "É permitido o consumo de álcool antes de dirigir, desde que em pequena quantidade?"
+answers = ["Sim, pequenas quantidades são permitidas", "Não, a tolerância é zero", "Sim, se a pessoa tiver um bom histórico de direção", "Somente se for para viagens curtas"]
+correct = 1
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_d4e4h"]
+script = ExtResource("1_y7epr")
+question = "Quando é obrigatório o uso do farol durante o dia?"
+answers = ["Em qualquer lugar", "Em rodovias", "Somente em dias de chuva", "Somente em áreas escolares"]
+correct = 1
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_w13op"]
+script = ExtResource("1_y7epr")
+question = "Qual é a ação correta ao perceber que está ficando com sono ao dirigir?"
+answers = ["Aumentar o volume do rádio", "Abrir a janela", "Parar o veículo e descansar", "Beber café e continuar dirigindo"]
+correct = 2
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_kpnl5"]
+script = ExtResource("1_y7epr")
+question = "Qual é o comportamento correto em relação aos ciclistas na pista?"
+answers = ["Manter distância lateral segura", "Acelerar para ultrapassar rapidamente", "Buzinar para alertá-los", "Atravessar o mais perto possível"]
+correct = 0
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_a1j3l"]
+script = ExtResource("1_y7epr")
+question = "O que significa o sinal de trânsito com um pedestre dentro de um triângulo amarelo?"
+answers = ["Aviso de travessia de pedestres", "Proibido para pedestres", "Zona escolar", "Área de ciclismo"]
+correct = 0
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_yy2sv"]
+script = ExtResource("1_y7epr")
+question = "Em quais condições é permitido estacionar em frente a uma entrada de garagem?"
+answers = ["Em horários de pouco movimento", "Somente à noite", "Se a garagem for sua", "Nunca é permitido"]
+correct = 3
+img_url = ""
+
+[sub_resource type="Resource" id="Resource_fn3m5"]
+script = ExtResource("1_y7epr")
+question = "O que deve ser feito ao aproximar-se de uma faixa de pedestres sem semáforo e com pessoas esperando para atravessar?"
+answers = ["Parar o veículo e dar preferência", "Aguardar até que os pedestres desistam", "Passar rapidamente para não atrapalhar", "Buzinar para alertar os pedestres"]
+correct = 0
+img_url = ""
+
+[resource]
+script = ExtResource("2_sj22d")
+name = "Quiz 2"
+theme = "Comportamento"
+img_url = ""
+questions = Array[ExtResource("1_y7epr")]([SubResource("Resource_u8feu"), SubResource("Resource_uveqi"), SubResource("Resource_6sp4g"), SubResource("Resource_nnnrv"), SubResource("Resource_kcgc1"), SubResource("Resource_mw1n6"), SubResource("Resource_sfap5"), SubResource("Resource_7sf1t"), SubResource("Resource_ctofb"), SubResource("Resource_d4e4h"), SubResource("Resource_w13op"), SubResource("Resource_kpnl5"), SubResource("Resource_a1j3l"), SubResource("Resource_yy2sv"), SubResource("Resource_fn3m5")])

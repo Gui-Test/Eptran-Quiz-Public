@@ -1,0 +1,178 @@
+[gd_scene load_steps=14 format=3 uid="uid://5ucm3q7klkw"]
+
+[ext_resource type="Script" path="res://scripts/create_quiz/create_quiz.gd" id="1_ov08k"]
+[ext_resource type="FontFile" uid="uid://0rf0fbwia0k6" path="res://resources/theme/tf2build.ttf" id="2_7vwa5"]
+[ext_resource type="Texture2D" uid="uid://ijn2cov0lqgr" path="res://assets/imgs/CriarQuiz.png" id="2_8ncr2"]
+[ext_resource type="Texture2D" uid="uid://dtn1fb36gpf3p" path="res://assets/imgs/CirculoCinza.png" id="4_c430v"]
+[ext_resource type="Theme" uid="uid://jbcjpfremqdg" path="res://resources/theme/image_upload_theme.tres" id="4_ejjcv"]
+[ext_resource type="Theme" uid="uid://bb5ha5vaemptx" path="res://resources/theme/line_input_theme.tres" id="4_k7lef"]
+[ext_resource type="Theme" uid="uid://ch6rvxn0u2tcr" path="res://resources/theme/button_placa2_theme.tres" id="5_6fyxh"]
+[ext_resource type="Script" path="res://scripts/file_access_button.gd" id="5_7wl3a"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cbmvd"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Theme" id="Theme_7x14h"]
+/styles/style = SubResource("StyleBoxFlat_cbmvd")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lmcan"]
+content_margin_left = 15.0
+content_margin_top = 15.0
+content_margin_right = 15.0
+content_margin_bottom = 5.0
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 3
+border_width_top = 4
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.568627, 0.568627, 0.568627, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tjpvv"]
+texture = ExtResource("4_c430v")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yv1hi"]
+texture = ExtResource("4_c430v")
+
+[node name="CreateQuiz" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ov08k")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_8ncr2")
+expand_mode = 1
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 460.0
+offset_right = 1144.0
+offset_bottom = 605.0
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 0
+offset_left = 375.0
+offset_top = 42.0
+offset_right = 798.0
+offset_bottom = 118.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_7vwa5")
+theme_override_font_sizes/font_size = 75
+text = "Criar quiz"
+horizontal_alignment = 1
+
+[node name="ImageRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 768.0
+offset_top = 115.0
+offset_right = 904.0
+offset_bottom = 218.0
+theme = SubResource("Theme_7x14h")
+expand_mode = 1
+
+[node name="UploadButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 445.0
+offset_top = 121.0
+offset_right = 650.0
+offset_bottom = 158.0
+theme = ExtResource("4_ejjcv")
+text = "Enviar imagem"
+script = ExtResource("5_7wl3a")
+
+[node name="Form" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 0
+offset_left = 146.0
+offset_top = 123.0
+offset_right = 393.0
+offset_bottom = 200.0
+theme_override_constants/separation = 10
+
+[node name="NameInput" type="LineEdit" parent="Form"]
+layout_mode = 2
+theme = ExtResource("4_k7lef")
+placeholder_text = "Nome"
+
+[node name="ThemeInput" type="LineEdit" parent="Form"]
+layout_mode = 2
+theme = ExtResource("4_k7lef")
+placeholder_text = "Tema"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 0.031
+offset_left = 28.0
+offset_top = 217.0
+offset_right = 995.0
+offset_bottom = 526.912
+theme_override_styles/panel = SubResource("StyleBoxFlat_lmcan")
+
+[node name="CreateQuestion" type="HBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 2
+theme_override_constants/separation = 30
+
+[node name="QuestionsContainer" type="HBoxContainer" parent="ScrollContainer/CreateQuestion"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/separation = 30
+
+[node name="NewQuestionButton" type="Button" parent="ScrollContainer/CreateQuestion"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 23
+theme_override_styles/hover = SubResource("StyleBoxTexture_tjpvv")
+theme_override_styles/normal = SubResource("StyleBoxTexture_yv1hi")
+text = "+"
+
+[node name="SubmitButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1018.0
+offset_top = 247.0
+offset_right = 1124.0
+offset_bottom = 341.0
+theme = ExtResource("5_6fyxh")
+theme_override_font_sizes/font_size = 20
+text = "Salvar"
+
+[node name="Voltar" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1007.0
+offset_top = 414.0
+offset_right = 1118.0
+offset_bottom = 511.0
+theme = ExtResource("5_6fyxh")
+theme_override_font_sizes/font_size = 20
+text = "Voltar"
+
+[connection signal="loaded" from="UploadButton" to="." method="_on_upload_button_loaded"]
+[connection signal="text_changed" from="Form/NameInput" to="." method="_on_name_input_text_changed"]
+[connection signal="text_changed" from="Form/ThemeInput" to="." method="_on_theme_input_text_changed"]
+[connection signal="pressed" from="ScrollContainer/CreateQuestion/NewQuestionButton" to="." method="_on_new_question_button_pressed"]
+[connection signal="pressed" from="SubmitButton" to="." method="_on_submit_button_pressed"]
+[connection signal="pressed" from="Voltar" to="." method="_on_voltar_pressed"]

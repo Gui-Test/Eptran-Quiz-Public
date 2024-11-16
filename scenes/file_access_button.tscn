@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxh7fkoqd1ki2"]
+
+[ext_resource type="Script" path="res://scripts/file_access_button.gd" id="1_5r1sg"]
+
+[node name="FileAccessButton" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("1_5r1sg")

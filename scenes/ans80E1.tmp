@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://c3xybxm64ntdm"]
+
+[ext_resource type="StyleBox" uid="uid://bytxe7k3nqqwu" path="res://resources/styleboxes/answer_button.tres" id="1_8nlpl"]
+[ext_resource type="Script" path="res://scripts/answer_button.gd" id="1_p7dum"]
+
+[sub_resource type="Theme" id="Theme_hvd6e"]
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/styles/normal = ExtResource("1_8nlpl")
+
+[node name="AnswerButton" type="Button"]
+custom_minimum_size = Vector2(240, 100)
+offset_right = 240.0
+offset_bottom = 100.0
+theme = SubResource("Theme_hvd6e")
+text = "Um texto até que grande para ver como fazer para o botão se adaptar ao texto"
+autowrap_mode = 3
+script = ExtResource("1_p7dum")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

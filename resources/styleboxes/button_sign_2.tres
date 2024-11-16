@@ -1,0 +1,9 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://omqio6hp8bfb"]
+
+[ext_resource type="Texture2D" uid="uid://cnml6nwo3xl2i" path="res://assets/imgs/Placa_Criar.png" id="1_31s0k"]
+
+[resource]
+content_margin_left = 5.0
+content_margin_top = 35.0
+content_margin_right = 5.0
+texture = ExtResource("1_31s0k")

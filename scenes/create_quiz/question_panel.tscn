@@ -1,0 +1,81 @@
+[gd_scene load_steps=9 format=3 uid="uid://bt2rhgjdbvsep"]
+
+[ext_resource type="Script" path="res://scripts/create_quiz/question_panel.gd" id="1_seefn"]
+[ext_resource type="Texture2D" uid="uid://dtn1fb36gpf3p" path="res://assets/imgs/CirculoCinza.png" id="2_5jvpx"]
+[ext_resource type="Theme" uid="uid://deg4g3pgykccd" path="res://resources/theme/question_input_theme.tres" id="2_84g5n"]
+[ext_resource type="Theme" uid="uid://jbcjpfremqdg" path="res://resources/theme/image_upload_theme.tres" id="3_hocw6"]
+[ext_resource type="Script" path="res://scripts/file_access_button.gd" id="4_ox6t3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_15s58"]
+content_margin_left = 16.0
+content_margin_top = 16.0
+content_margin_right = 16.0
+content_margin_bottom = 16.0
+bg_color = Color(1, 0.87451, 0.309804, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+expand_margin_left = 8.0
+expand_margin_top = 8.0
+expand_margin_right = 8.0
+expand_margin_bottom = 8.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b2shh"]
+texture = ExtResource("2_5jvpx")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_c56cq"]
+texture = ExtResource("2_5jvpx")
+
+[node name="QuestionPanel" type="PanelContainer"]
+custom_minimum_size = Vector2(240, 0)
+offset_right = 240.0
+offset_bottom = 275.0
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_15s58")
+script = ExtResource("1_seefn")
+
+[node name="Container" type="VBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 8
+
+[node name="QuestionInput" type="LineEdit" parent="Container"]
+layout_mode = 2
+theme = ExtResource("2_84g5n")
+placeholder_text = "Pergunta"
+
+[node name="UploadButton" type="Button" parent="Container"]
+layout_mode = 2
+theme = ExtResource("3_hocw6")
+text = "Upload Image"
+script = ExtResource("4_ox6t3")
+
+[node name="ImageRect" type="TextureRect" parent="Container"]
+layout_mode = 2
+expand_mode = 5
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Container"]
+custom_minimum_size = Vector2(0, 102)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="AnswersContainer" type="VBoxContainer" parent="Container/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="NewAnswerButton" type="Button" parent="Container"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 23
+theme_override_styles/hover = SubResource("StyleBoxTexture_b2shh")
+theme_override_styles/normal = SubResource("StyleBoxTexture_c56cq")
+text = "+"
+
+[connection signal="text_changed" from="Container/QuestionInput" to="." method="_on_question_input_text_changed"]
+[connection signal="loaded" from="Container/UploadButton" to="." method="_on_upload_button_loaded"]
+[connection signal="pressed" from="Container/NewAnswerButton" to="." method="_on_new_answer_button_pressed"]

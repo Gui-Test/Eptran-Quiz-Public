@@ -1,0 +1,8 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://bqgh0gqsqdd5w"]
+
+[ext_resource type="StyleBox" uid="uid://cc0ixsiondomu" path="res://resources/styleboxes/quiz_card_style.tres" id="1_n1bhu"]
+
+[resource]
+resource_local_to_scene = true
+Button/styles/hover = ExtResource("1_n1bhu")
+Button/styles/normal = ExtResource("1_n1bhu")

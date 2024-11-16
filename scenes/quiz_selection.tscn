@@ -1,0 +1,67 @@
+[gd_scene load_steps=5 format=3 uid="uid://bpva6euunaleb"]
+
+[ext_resource type="Script" path="res://scenes/quiz_selection.gd" id="1_h2gjf"]
+[ext_resource type="Texture2D" uid="uid://1dr1pc53sa6m" path="res://assets/imgs/QuizSelecao2.png" id="2_swh8a"]
+[ext_resource type="StyleBox" uid="uid://c7gh213b8vlej" path="res://resources/styleboxes/button_sign.tres" id="3_3ro0y"]
+[ext_resource type="Theme" uid="uid://ch6rvxn0u2tcr" path="res://resources/theme/button_placa2_theme.tres" id="3_ayku3"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_h2gjf")
+
+[node name="Texcture" type="TextureRect" parent="."]
+layout_mode = 0
+offset_top = -2.0
+offset_right = 1151.0
+offset_bottom = 643.0
+texture = ExtResource("2_swh8a")
+expand_mode = 1
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 925.0
+offset_top = 227.0
+offset_right = 1105.0
+offset_bottom = 387.0
+theme = ExtResource("3_ayku3")
+text = "Criar         Quiz"
+autowrap_mode = 3
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 57.0
+offset_top = 237.0
+offset_right = 205.0
+offset_bottom = 381.0
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0.860369, 0.860369, 0.860369, 1)
+theme_override_font_sizes/font_size = 36
+theme_override_styles/hover = ExtResource("3_3ro0y")
+theme_override_styles/pressed = ExtResource("3_3ro0y")
+theme_override_styles/normal = ExtResource("3_3ro0y")
+text = "Voltar"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -306.0
+offset_top = -187.0
+offset_right = 306.0
+offset_bottom = 122.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="QuizContainer" type="HBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
